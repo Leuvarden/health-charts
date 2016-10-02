@@ -1,61 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>Amazing</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="index.css"/>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-  <script src='index.js'></script>
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  </head>
-  <body>
-    <main class="container">
-          <div class="data-square first-screen">
+<html lang="en">
+<head>
+    <title>Amazing</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src='js/index.js'></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <article>
+        <section id="a">
             <h1>Amazing</h1>
-            <p>
-              Now it's so easy to track your health
-            </p>
-            <a href="#" class="a-button">CONNECT</a>
-          </div>
-      </div>
-
-      <div class="data-square">
-        <h2>Steps today</h2>
-        <div id="steps" style="width: 100%; height: 400px;"></div>
-        <p>
-          Today's data:
-        </p>
-        <p>
-          Steps: <span class="">12.345</span>
-          <br>Distance: <span class="">5.5 km</span>
-          <br> Time: <span class="">2.5 hours</span>
-        </p>
-        <p>
-          You're doing great!
-        </p>
-      </div>
-
-      <div class="data-square">
-        <h2>How's your heart?</h2>
-        <div id="heart" style="width: 100%; height: 400px;"></div>
-        <p>
-          Today's data:
-        </p>
-        <p>
-          Rhytm: <span class="">12.345</span>
-          <br>Distance: <span class="">5.5 km</span>
-          <br> Time: <span class="">2.5 hours</span>
-        </p>
-        <p>
-          You're doing great!
-        </p>
-      </div>
-  </div>
-
-
-
-    </main>
-
-  </body>
+            <p>Now it's so easy to track your health</p>
+            <div class="a-button"><a href="#b">Connect</a></div>
+        </section>
+        <section id="b">
+          <h2>Let's see</h2>
+          <a href="#c">Steps</a>
+          <a href="#d">Battery</a>
+          <a href="#e">Device</a>
+        </section>
+        <section id="c">
+            <h2>Steps today</h2>
+            <div id="steps" style="width: 100%; height: 40%; float: right;"></div>
+            <a href="#c">Navigation</a>
+            <a href="#d">Next: Activity</a>
+        </section>
+        <section id="d">
+            <h2>Battery</h2>
+            <div id="battery" style="width: 50%; height: 70%; float: right;"></div>
+            <a href="#a">goto A</a>
+        </section>
+        <section id="e">
+            <h2>Disconnect</h2>
+            <a href="#a">goto A</a>
+        </section>
+    </article>
+</body>
 </html>
