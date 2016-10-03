@@ -1,44 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Amazing</title>
+    <meta charset="UTF-8">
+    <title>Amazing Mi Band</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/menuspy.js"></script>
     <script src='js/index.js'></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 
 <body>
-    <article>
-        <section id="a">
-            <h1>Amazing</h1>
-            <p>Now it's so easy to track your health</p>
-            <div class="a-button"><a href="#b">Connect</a></div>
+    <header id="main-header" class="side-menu invisible">
+        <nav>
+            <ul>
+                <li class="active"><a href="#home"><span></span></a></li>
+                <li><a href="#section-1"><span></span></a></li>
+                <li><a href="#section-2"><span></span></a></li>
+                <li><a href="#section-3"><span></span></a></li>
+                <li><a href="#section-4"><span></span></a></li>
+                <li><a href="#section-5"><span></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="inner">
+                <h1>Good to see you</h1>
+                <a href="#section-1" class="connect">Connect</a>
+            </div>
         </section>
-        <section id="b">
-          <h2>Let's see</h2>
-          <a href="#c">Steps</a>
-          <a href="#d">Battery</a>
-          <a href="#e">Device</a>
+
+        <section id="section-1">
+            <h2>Steps</h2>
+            <div class="data-container">
+                <div class="data-cell">
+                    <p>Today</p>
+                    <p class="data">12 345</p>
+                    <p>steps</p>
+                </div>
+                <div class="data-cell">
+                    <p>Distance</p>
+                    <p class="data">2.8</p>
+                    <p>km</p>
+                </div>
+                <div class="data-cell">
+                    <p>Speed</p>
+                    <p class="data">2</p>
+                    <p>km/h</p>
+                </div>
+                <div class="data-cell">
+                    <p>Time</p>
+                    <p class="data">1,3</p>
+                    <p>h</p>
+                </div>
+            </div>
+            <div id="steps" style="width: 90%; height: 300px; margin: 0 auto"></div>
         </section>
-        <section id="c">
-            <h2>Steps today</h2>
-            <div id="steps" style="width: 100%; height: 40%; float: right;"></div>
-            <a href="#c">Navigation</a>
-            <a href="#d">Next: Activity</a>
+
+        <section id="section-2">
+            <h2>Heart</h2>
+            <div class="data-container">
+                <div class="data-cell">
+                    <p>Now</p>
+                    <p class="data">72</p>
+                    <p>bpm</p>
+                </div>
+                <div class="data-cell">
+                    <p>Max</p>
+                    <p class="data">157</p>
+                    <p>bpm</p>
+                </div>
+                <div class="data-cell">
+                    <p>Min</p>
+                    <p class="data">50</p>
+                    <p>bpm</p>
+                </div>
+                <div class="data-cell">
+                    <p>Average</p>
+                    <p class="data">78</p>
+                    <p>bpm</p>
+                </div>
+            </div>
+            <div id="heart" style="width: 90%; height: 300px; margin: 0 auto"></div>
         </section>
-        <section id="d">
+
+        <section id="section-3">
+            <h2>Sleep</h2>
+            <div class="data-container">
+                <div class="data-cell">
+                    <p>Sleep time</p>
+                    <p class="data">8,5</p>
+                    <p>h</p>
+                </div>
+                <div class="data-cell">
+                    <p>Deep sleep</p>
+                    <p class="data">2</p>
+                    <p>h</p>
+                </div>
+                <div class="data-cell">
+                    <p>Sleep cycles</p>
+                    <p class="data">2</p>
+                    <p class="invisible">.</p>
+                </div>
+                <div class="data-cell">
+                    <p>Lack of sleep</p>
+                    <p class="data">none</p>
+                    <p>.</p>
+                </div>
+            </div>
+            <div id="sleep" style="width: 90%; height: 300px; margin: 0 auto"></div>
+        </section>
+
+        <section id="section-4">
             <h2>Battery</h2>
-            <div id="battery" style="width: 50%; height: 70%; float: right;"></div>
-            <a href="#a">goto A</a>
+            <div class="data-container">
+                <div class="data-cell">
+                    <p>Charge</p>
+                    <p class="data">70</p>
+                    <p>%</p>
+                </div>
+                <div class="data-cell">
+                    <p>Last Charged</p>
+                    <p class="data">2</p>
+                    <p>h ago</p>
+                </div>
+                <div class="data-cell">
+                    <p>Model</p>
+                    <p class="data">Mi Band 2</p>
+                    <p class="invisible">.</p>
+                </div>
+                <div class="data-cell">
+                    <p>Software</p>
+                    <p class="data">2.0</p>
+                    <p>ver</p>
+                </div>
+            </div>
+            <div id="battery" style="width: 90%; height: 400px; margin: 0 auto"></div>
         </section>
-        <section id="e">
-            <h2>Disconnect</h2>
-            <a href="#a">goto A</a>
+
+        <section id="section-5">
+            <div class="inner">
+              <h1>See you soon</h1>
+              <a href="#" class="connect">Disconnect</a>
+            </div>
         </section>
-    </article>
+    </main>
 </body>
+
 </html>
