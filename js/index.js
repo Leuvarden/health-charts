@@ -12,7 +12,7 @@ $(document).ready(function() {
     	$('.side-menu').toggleClass("invisible");
 
     });
-    //sidebar initializing
+    //sidebar initiat
     var elm = document.querySelector('#main-header');
     var ms = new MenuSpy(elm);
 
